@@ -16,7 +16,7 @@ architecture rtl of led is
         begin
             if (RST = '1') then
                 cnt <= (others => '0');
-            elsif (CLK'event and CLK = '1') then
+            elsif rising_edge(CLK) then
                 cnt <= cnt +1;
             end if;
         end process;
