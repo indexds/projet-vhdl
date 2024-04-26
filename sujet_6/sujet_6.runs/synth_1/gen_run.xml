@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1714071466">
-  <File Type="PA-TCL" Name="chrono.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="chrono_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="chrono_reports.tcl"/>
-  <File Type="RDS-RDS" Name="chrono.vds"/>
-  <File Type="RDS-UTIL" Name="chrono_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="chrono_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="chrono.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="chrono_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="chrono_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1714143269">
+  <File Type="PA-TCL" Name="chronometre.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="chronometre_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="chronometre_reports.tcl"/>
+  <File Type="RDS-RDS" Name="chronometre.vds"/>
+  <File Type="RDS-UTIL" Name="chronometre_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="chronometre_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="chronometre.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="chronometre_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="chronometre_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../Desktop/chronometre.vhd">
+    <File Path="$PPRDIR/chronometre.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -19,13 +19,13 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="chrono"/>
+      <Option Name="TopModule" Val="chronometre"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../../Desktop/BASYS3.xdc">
+    <File Path="$PPRDIR/BASYS3.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

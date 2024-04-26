@@ -32,7 +32,7 @@ set_property board_part_repo_paths {C:/Users/_index/AppData/Roaming/Xilinx/Vivad
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/_index/Desktop/chronometre.vhd
+read_vhdl -library xil_defaultlib C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/chronometre.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -41,18 +41,18 @@ read_vhdl -library xil_defaultlib C:/Users/_index/Desktop/chronometre.vhd
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/_index/Desktop/BASYS3.xdc
-set_property used_in_implementation false [get_files C:/Users/_index/Desktop/BASYS3.xdc]
+read_xdc C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/BASYS3.xdc
+set_property used_in_implementation false [get_files C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/BASYS3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top chrono -part xc7a35tcpg236-1
+synth_design -top chronometre -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef chrono.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file chrono_utilization_synth.rpt -pb chrono_utilization_synth.pb"
+write_checkpoint -force -noxdef chronometre.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file chronometre_utilization_synth.rpt -pb chronometre_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

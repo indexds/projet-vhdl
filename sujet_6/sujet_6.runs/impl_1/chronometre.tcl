@@ -76,9 +76,9 @@ set rc [catch {
   set_property parent.project_path C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.xpr [current_project]
   set_property ip_output_repo C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.runs/synth_1/chrono.dcp
-  read_xdc C:/Users/_index/Desktop/BASYS3.xdc
-  link_design -top chrono -part xc7a35tcpg236-1
+  add_files -quiet C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.runs/synth_1/chronometre.dcp
+  read_xdc C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/BASYS3.xdc
+  link_design -top chronometre -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -94,8 +94,8 @@ set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
   opt_design 
-  write_checkpoint -force chrono_opt.dcp
-  create_report "impl_1_opt_report_drc_0" "report_drc -file chrono_drc_opted.rpt -pb chrono_drc_opted.pb -rpx chrono_drc_opted.rpx"
+  write_checkpoint -force chronometre_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file chronometre_drc_opted.rpt -pb chronometre_drc_opted.pb -rpx chronometre_drc_opted.rpx"
   close_msg_db -file opt_design.pb
 } RESULT]
 if {$rc} {
@@ -114,10 +114,10 @@ set rc [catch {
     implement_debug_core 
   } 
   place_design 
-  write_checkpoint -force chrono_placed.dcp
-  create_report "impl_1_place_report_io_0" "report_io -file chrono_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file chrono_utilization_placed.rpt -pb chrono_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file chrono_control_sets_placed.rpt"
+  write_checkpoint -force chronometre_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file chronometre_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file chronometre_utilization_placed.rpt -pb chronometre_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file chronometre_control_sets_placed.rpt"
   close_msg_db -file place_design.pb
 } RESULT]
 if {$rc} {
@@ -133,19 +133,19 @@ set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
   route_design 
-  write_checkpoint -force chrono_routed.dcp
-  create_report "impl_1_route_report_drc_0" "report_drc -file chrono_drc_routed.rpt -pb chrono_drc_routed.pb -rpx chrono_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file chrono_methodology_drc_routed.rpt -pb chrono_methodology_drc_routed.pb -rpx chrono_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file chrono_power_routed.rpt -pb chrono_power_summary_routed.pb -rpx chrono_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file chrono_route_status.rpt -pb chrono_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file chrono_timing_summary_routed.rpt -pb chrono_timing_summary_routed.pb -rpx chrono_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file chrono_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file chrono_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file chrono_bus_skew_routed.rpt -pb chrono_bus_skew_routed.pb -rpx chrono_bus_skew_routed.rpx"
+  write_checkpoint -force chronometre_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file chronometre_drc_routed.rpt -pb chronometre_drc_routed.pb -rpx chronometre_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file chronometre_methodology_drc_routed.rpt -pb chronometre_methodology_drc_routed.pb -rpx chronometre_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file chronometre_power_routed.rpt -pb chronometre_power_summary_routed.pb -rpx chronometre_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file chronometre_route_status.rpt -pb chronometre_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file chronometre_timing_summary_routed.rpt -pb chronometre_timing_summary_routed.pb -rpx chronometre_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file chronometre_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file chronometre_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file chronometre_bus_skew_routed.rpt -pb chronometre_bus_skew_routed.pb -rpx chronometre_bus_skew_routed.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
-  write_checkpoint -force chrono_routed_error.dcp
+  write_checkpoint -force chronometre_routed_error.dcp
   step_failed route_design
   return -code error $RESULT
 } else {
@@ -157,10 +157,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  catch { write_mem_info -force chrono.mmi }
-  write_bitstream -force chrono.bit 
-  catch {write_debug_probes -quiet -force chrono}
-  catch {file copy -force chrono.ltx debug_nets.ltx}
+  catch { write_mem_info -force chronometre.mmi }
+  write_bitstream -force chronometre.bit 
+  catch {write_debug_probes -quiet -force chronometre}
+  catch {file copy -force chronometre.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
