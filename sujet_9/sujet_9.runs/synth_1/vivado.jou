@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 16 17:38:26 2024
+# Process ID: 8900
+# Current directory: C:/Users/_index/Documents/Programming/projet-vhdl/sujet_9/sujet_9.runs/synth_1
+# Command line: vivado.exe -log pong.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pong.tcl
+# Log file: C:/Users/_index/Documents/Programming/projet-vhdl/sujet_9/sujet_9.runs/synth_1/pong.vds
+# Journal file: C:/Users/_index/Documents/Programming/projet-vhdl/sujet_9/sujet_9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pong.tcl -notrace

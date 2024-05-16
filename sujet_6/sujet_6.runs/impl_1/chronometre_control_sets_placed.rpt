@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Apr 26 16:56:12 2024
+| Date         : Thu May 16 17:30:41 2024
 | Host         : index-pc running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file chronometre_control_sets_placed.rpt
 | Design       : chronometre
@@ -58,8 +58,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              17 |            7 |
-| No           | No                    | Yes                    |               6 |            2 |
+| No           | No                    | No                     |              17 |            8 |
+| No           | No                    | Yes                    |               6 |            3 |
 | No           | Yes                   | No                     |              41 |           12 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               8 |            4 |
@@ -70,17 +70,17 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------------+------------------+--------------------------------------+------------------+----------------+
-|              Clock Signal             |   Enable Signal  |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+---------------------------------------+------------------+--------------------------------------+------------------+----------------+
-|  button_right_was_pressed_reg_i_1_n_0 |                  | btnR_IBUF                            |                1 |              1 |
-|  clk                                  | minutes_counter0 | button_right_was_pressed_reg_i_1_n_0 |                2 |              4 |
-|  clk                                  | seconds_counter0 | button_right_was_pressed_reg_i_1_n_0 |                2 |              4 |
-|  CLK_IBUF_BUFG                        |                  |                                      |                2 |              4 |
-|  clk                                  |                  | button_right_was_pressed_reg_i_1_n_0 |                2 |              6 |
-|  clk_10khz_reg_n_0                    |                  |                                      |                5 |             13 |
-|  CLK_IBUF_BUFG                        |                  | clk_10khz                            |                4 |             15 |
-|  CLK_IBUF_BUFG                        |                  | clk_1hz                              |                7 |             25 |
-+---------------------------------------+------------------+--------------------------------------+------------------+----------------+
++---------------------------------------+----------------------------+--------------------------------------+------------------+----------------+
+|              Clock Signal             |        Enable Signal       |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++---------------------------------------+----------------------------+--------------------------------------+------------------+----------------+
+|  button_right_was_pressed_reg_i_1_n_0 |                            | btnR_IBUF                            |                1 |              1 |
+|  CLK_IBUF_BUFG                        |                            |                                      |                2 |              4 |
+|  clk                                  | seconds_counter0           | button_right_was_pressed_reg_i_1_n_0 |                2 |              4 |
+|  clk                                  | minutes_counter[3]_i_1_n_0 | button_right_was_pressed_reg_i_1_n_0 |                2 |              4 |
+|  clk                                  |                            | button_right_was_pressed_reg_i_1_n_0 |                3 |              6 |
+|  clk_10khz_reg_n_0                    |                            |                                      |                6 |             13 |
+|  CLK_IBUF_BUFG                        |                            | clk_10khz                            |                4 |             15 |
+|  CLK_IBUF_BUFG                        |                            | clk_1hz                              |                7 |             25 |
++---------------------------------------+----------------------------+--------------------------------------+------------------+----------------+
 
 

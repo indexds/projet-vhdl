@@ -76,7 +76,6 @@ begin
                     else
                         tens_seconds_counter <= 0;
                         
-                        
                         if minutes_counter < 9 then
                             minutes_counter <= minutes_counter + 1;
                         else
@@ -85,18 +84,16 @@ begin
                             if tens_minutes_counter < 5 then
                                 tens_minutes_counter <= tens_minutes_counter + 1;
                             else
-                                seconds_counter <= 0;
-                                tens_seconds_counter <= 0;
-                                minutes_counter <= 0;
                                 tens_minutes_counter <= 0;
                             end if;
-						end if;
-					end if;
-				end if;
-				seconds_counter <= seconds_counter + 1;
-			end if;
-		end if;
-     end process;
+                        end if;
+                    end if;
+                else
+                    seconds_counter <= seconds_counter + 1;
+                end if;
+            end if;
+        end if;
+    end process;
      
      process(clk_10khz)
      begin

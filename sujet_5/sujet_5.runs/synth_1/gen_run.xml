@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1714071206">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1715872591">
   <File Type="PA-TCL" Name="chiffres_differents.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="chiffres_differents_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="chiffres_differents_reports.tcl"/>
@@ -11,7 +11,7 @@
   <File Type="VDS-TIMING-PB" Name="chiffres_differents_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../../../../Desktop/chiffres_differents.vhd">
+    <File Path="$PSRCDIR/sources_1/new/chiffres_differents.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -25,7 +25,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../../../Desktop/BASYS3.xdc">
+    <File Path="$PSRCDIR/constrs_1/new/BASYS3.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

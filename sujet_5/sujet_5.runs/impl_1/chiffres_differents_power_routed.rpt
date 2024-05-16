@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Apr 25 20:55:28 2024
+| Date             : Thu May 16 17:18:17 2024
 | Host             : index-pc running 64-bit major release  (build 9200)
 | Command          : report_power -file chiffres_differents_power_routed.rpt -pb chiffres_differents_power_summary_routed.pb -rpx chiffres_differents_power_routed.rpx
 | Design           : chiffres_differents

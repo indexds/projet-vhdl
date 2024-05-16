@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Apr 26 16:54:32 2024
-# Process ID: 4136
+# Start of session at: Thu May 16 17:29:20 2024
+# Process ID: 1380
 # Current directory: C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.runs/synth_1
 # Command line: vivado.exe -log chronometre.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source chronometre.tcl
 # Log file: C:/Users/_index/Documents/Programming/projet-vhdl/sujet_6/sujet_6.runs/synth_1/chronometre.vds

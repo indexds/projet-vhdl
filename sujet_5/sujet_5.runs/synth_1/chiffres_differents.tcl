@@ -32,7 +32,7 @@ set_property board_part_repo_paths {C:/Users/_index/AppData/Roaming/Xilinx/Vivad
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/_index/Desktop/chiffres_differents.vhd
+read_vhdl -library xil_defaultlib C:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.srcs/sources_1/new/chiffres_differents.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -41,8 +41,8 @@ read_vhdl -library xil_defaultlib C:/Users/_index/Desktop/chiffres_differents.vh
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/_index/Desktop/BASYS3.xdc
-set_property used_in_implementation false [get_files C:/Users/_index/Desktop/BASYS3.xdc]
+read_xdc C:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.srcs/constrs_1/new/BASYS3.xdc
+set_property used_in_implementation false [get_files C:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.srcs/constrs_1/new/BASYS3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

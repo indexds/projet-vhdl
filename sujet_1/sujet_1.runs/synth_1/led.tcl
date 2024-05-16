@@ -17,6 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -28,7 +30,7 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/sujet_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/led.vhd
+read_vhdl -library xil_defaultlib C:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/sujet_1.srcs/sources_1/new/led.vhd
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -37,8 +39,8 @@ read_vhdl -library xil_defaultlib C:/Users/_index/Documents/Programming/projet-v
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/BASYS3.xdc
-set_property used_in_implementation false [get_files C:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/BASYS3.xdc]
+read_xdc C:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/sujet_1.srcs/constrs_1/new/BASYS3.xdc
+set_property used_in_implementation false [get_files C:/Users/_index/Documents/Programming/projet-vhdl/sujet_1/sujet_1.srcs/constrs_1/new/BASYS3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

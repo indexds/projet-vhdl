@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Thu Apr 18 17:13:09 2024
+| Date         : Thu May 16 16:43:28 2024
 | Host         : index-pc running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file chenillard_control_sets_placed.rpt
 | Design       : chenillard
@@ -73,22 +73,22 @@ Table of Contents
 +----------------+-----------------+------------------+------------------+----------------+
 |  Clock Signal  |  Enable Signal  | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+-----------------+------------------+------------------+----------------+
-|  CLK_IBUF_BUFG | LED[5]_i_1_n_0  | RST_IBUF         |                1 |              1 |
-|  CLK_IBUF_BUFG | LED[9]_i_1_n_0  | RST_IBUF         |                1 |              1 |
-|  CLK_IBUF_BUFG | LED[13]_i_1_n_0 | RST_IBUF         |                1 |              1 |
-|  CLK_IBUF_BUFG | LED[1]_i_1_n_0  | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[10]_i_1_n_0 | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[11]_i_1_n_0 | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[2]_i_1_n_0  | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[13]_i_1_n_0 | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[14]_i_1_n_0 | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[12]_i_1_n_0 | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[1]_i_1_n_0  | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[15]_i_1_n_0 | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[3]_i_1_n_0  | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[4]_i_1_n_0  | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[6]_i_1_n_0  | RST_IBUF         |                1 |              1 |
-|  CLK_IBUF_BUFG | LED[2]_i_1_n_0  | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[7]_i_1_n_0  | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[8]_i_1_n_0  | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[9]_i_1_n_0  | RST_IBUF         |                1 |              1 |
+|  CLK_IBUF_BUFG | LED[5]_i_1_n_0  | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | LED[0]_i_1_n_0  | RST_IBUF         |                1 |              1 |
-|  CLK_IBUF_BUFG | LED[14]_i_1_n_0 | RST_IBUF         |                1 |              1 |
-|  CLK_IBUF_BUFG | LED[15]_i_1_n_0 | RST_IBUF         |                1 |              1 |
 |  CLK_IBUF_BUFG | led_sel         | RST_IBUF         |                2 |              5 |
 |  CLK_IBUF_BUFG |                 | RST_IBUF         |                6 |             25 |
 +----------------+-----------------+------------------+------------------+----------------+

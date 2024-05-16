@@ -77,7 +77,7 @@ set rc [catch {
   set_property ip_output_repo C:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet C:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.runs/synth_1/chiffres_differents.dcp
-  read_xdc C:/Users/_index/Desktop/BASYS3.xdc
+  read_xdc C:/Users/_index/Documents/Programming/projet-vhdl/sujet_5/sujet_5.srcs/constrs_1/new/BASYS3.xdc
   link_design -top chiffres_differents -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -5,7 +5,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity led is
 port (CLK,RST : in std_logic;
-        L: out std_logic);
+        LED: out std_logic);
 end led;
 
 architecture rtl of led is
@@ -21,6 +21,6 @@ architecture rtl of led is
             end if;
         end process;
 
-L <= cnt(23);
+LED <= cnt(23);
 
 end rtl;

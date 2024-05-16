@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Apr 26 16:56:41 2024
+| Date         : Thu May 16 17:31:06 2024
 | Host         : index-pc running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file chronometre_clock_utilization_routed.rpt
 | Design       : chronometre
@@ -69,8 +69,8 @@ Table of Contents
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+-----------------+-------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL          | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin      | Net               |
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+-----------------+-------------------||
-| 0        | FDRE/Q          | None       | SLICE_X61Y21/A5FF | X1Y0         |          14 |               1 |              |       | clk_1hz_reg/Q   | clk               - Static -
-| 1        | FDRE/Q          | None       | SLICE_X63Y20/A5FF | X1Y0         |          13 |               1 |              |       | clk_10khz_reg/Q | clk_10khz_reg_n_0 - Static -
+| 0        | FDRE/Q          | None       | SLICE_X59Y23/A5FF | X1Y0         |          14 |               1 |              |       | clk_1hz_reg/Q   | clk               - Static -
+| 1        | FDRE/Q          | None       | SLICE_X62Y24/A5FF | X1Y0         |          13 |               1 |              |       | clk_10khz_reg/Q | clk_10khz_reg_n_0 - Static -
 +----------+-----------------+------------+-------------------+--------------+-------------+-----------------+--------------+-------+-----------------+-------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
@@ -86,7 +86,7 @@ Table of Contents
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   71 |  1500 |   32 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   71 |  1500 |    7 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1500 |    0 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1800 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
